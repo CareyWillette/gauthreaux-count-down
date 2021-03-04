@@ -1,0 +1,22 @@
+.timer {
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.timer span {
+  font-size: 2em;
+  margin: 0 3px 0 15px;
+}
+
+#celebrate {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  * {
+    flex: 0 auto;
+  }
+}
