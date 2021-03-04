@@ -64,6 +64,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.subscription = interval(1000).subscribe((x) => {
       this.getTimeDifference();
     });
+    const videoEl = document.querySelector('video');
+    videoEl.addEventListener('loadeddata', () => {
+      if (videoEl.readyState >= 2) {
+        videoEl.play();
+      }
+    })
   }
 
   ngOnDestroy() {

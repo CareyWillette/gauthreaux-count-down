@@ -538,7 +538,9 @@
 </div>
 
 <div id="celebrate">
-  <video id="vid" width="560" height="315" src="assets/final_countdown.mp4" controls autoplay></video>
+  <video id="vid" width="375" preload="auto" controls>
+    <source src="assets/final_countdown.mp4" type="video/mp4">
+  </video>
 </div>
 
 <router-outlet></router-outlet>
